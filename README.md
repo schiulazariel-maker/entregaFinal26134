@@ -79,3 +79,28 @@ npm test
   }
 }
 ```
+## Deploy en Vercel
+
+La API fue desplegada en Vercel.
+
+URL base:
+
+https://entrega-final26134.vercel.app
+
+### Rutas principales
+
+- GET `/`
+- GET `/up`
+- GET `/api/products`
+- GET `/api/products/:id`
+- POST `/api/products`
+- PUT `/api/products/:id`
+- DELETE `/api/products/:id`
+- POST `/api/auth/login`
+
+Para desplegar una API Express en Vercel se creó la carpeta `api` con el archivo `api/index.js`, que exporta la aplicación Express:
+
+```js
+import app from "../app.js";
+
+export default app;
